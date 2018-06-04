@@ -4,9 +4,13 @@
             "es2018",
             "dom",
         ],
+        "target": "es5",
+        "outDir": "lib",
+        "sourceMap": false,
+        "declaration": true,
+        "module": "commonjs",
         "strict": true,
         "preserveConstEnums": true,
-        "sourceMap": true,
         "jsx": "react",        
     }
 }
