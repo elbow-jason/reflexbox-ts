@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es2018",
+            "dom",
+        ],
+        "strict": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "jsx": "react",        
+    }
+}
