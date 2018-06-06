@@ -24,4 +24,4 @@ export interface BoxProps {
     pl?: number | string;
     pr?: number | string;
 }
-export declare function Box<P>(props: P): React.StatelessComponent<P & BoxProps>;
+export declare function Box(props: BoxProps): React.StatelessComponent<BoxProps>;

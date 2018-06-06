@@ -31,6 +31,6 @@ export interface BoxProps {
   pr?: number | string,
 }
 
-export function Box<P>(props: P): React.StatelessComponent<P & BoxProps> {
-  return reflex<P>('div')
+export function Box(props: BoxProps): React.StatelessComponent<BoxProps> {
+  return reflex<BoxProps>('div')
 }
