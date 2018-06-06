@@ -3,6 +3,5 @@ node_modules
 npm-debug.log
 .DS_Store
 .vscode
-dist/*
 package-lock.json
 yarn.lock
