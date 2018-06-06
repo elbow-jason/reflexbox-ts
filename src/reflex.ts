@@ -7,8 +7,7 @@ export type ContextTyped = {contextTypes: ContextTypesI}
 export type ReflexFunc<P> = <P>(props: P, context: ContextTypesI) => React.SFCElement<P> 
 export type ReflexI<P> = ContextTyped & ReflexFunc<P>
 
-
-const reflex = <P>(component: any) => {
+export const reflex = <P>(component: any) => {
   const Reflex: any = <P>(props: P, context: ContextTypesI) => {
     const config = Object.assign({}, defaultConfig(), context.reflexbox)
     const next: P = css.configure<P>(config)(props)
@@ -20,4 +19,3 @@ const reflex = <P>(component: any) => {
   return Reflex as ReflexI<P>
 }
 
-export default reflex

@@ -1,5 +1,5 @@
-import reflex from './reflex'
+import * as React from "react"
+import { reflex, ReflexI} from './reflex'
+import { ContextTypesI } from "./context-types"
 
-const Box = reflex('div')
-
-export default Box
+export const Box: React.StatelessComponent = reflex('div')

@@ -1,6 +1,5 @@
-import { createElement, SFCElement } from 'react'
-import Box from './box'
+import * as React from 'react'
+import { Box } from './box'
+import contextTypes, { ContextTypesI } from './context-types'
 
-const Flex = <P={}>(props: P) => createElement(Box, Object.assign({}, props, { flex: true }))
-
-export default Flex
+export const Flex = <P={}>(props: P) => React.createElement(Box, Object.assign({}, props, { flex: true }))
