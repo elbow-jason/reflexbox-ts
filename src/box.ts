@@ -2,4 +2,6 @@ import * as React from "react"
 import { reflex, ReflexI} from './reflex'
 import { ContextTypesI } from "./context-types"
 
-export const Box: React.StatelessComponent = reflex('div')
+export function Box<P>(props: P): React.StatelessComponent<P> {
+  return reflex<P>('div')
+}
